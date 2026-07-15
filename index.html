@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tic-Tac-Toe</h1>
+            <div class="controls">
+                <label for="mode-select">Game Mode:</label>
+                <select id="mode-select">
+                    <option value="pvp">Player vs Player</option>
+                    <option value="ai-easy">Player vs AI (Easy)</option>
+                    <option value="ai-medium">Player vs AI (Medium)</option>
+                    <option value="ai-hard">Player vs AI (Hard)</option>
+                </select>
+            </div>
+        </header>
+
+        <main>
+            <div class="status" id="status-display">Player X's turn</div>
+            
+            <div class="board" id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+
+            <button class="reset-btn" id="reset-btn">Reset Game</button>
+        </main>
+        
+        <footer>
+            <p>Minimalist Tic-Tac-Toe Design</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
